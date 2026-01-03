@@ -374,7 +374,7 @@ with st.sidebar:
     st.markdown("This tool uses **Gemini 2.5 Flash** to analyze your code structure, explain logic, and suggest improvements.")
 
 # Header
-st.markdown('<h1 class="main-header">⚡ Code Analyzer</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">⚡ Code Analyzer (v2.5)</h1>', unsafe_allow_html=True)
 st.markdown('<p class="tagline">AI-Powered Code Insights & Suggestions</p>', unsafe_allow_html=True)
 
 # Language selector
@@ -459,4 +459,4 @@ if st.button("🔍 Analyze Code", use_container_width=True):
 
 # Footer
 st.markdown("---")
-st.markdown('<p style="text-align: center; color: #a0a0c0; margin-top: 2rem;">Built with ❤️ using Gemini 1.5 Flash</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align: center; color: #a0a0c0; margin-top: 2rem;">Built with ❤️ using Gemini 2.5 Flash</p>', unsafe_allow_html=True)
