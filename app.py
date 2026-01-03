@@ -314,7 +314,7 @@ def get_gemini_analysis(code: str, language: str, api_key: str) -> Dict[str, Any
     """
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         Analyze the following {language} code and provide a response in JSON format.
@@ -371,7 +371,7 @@ with st.sidebar:
         st.warning("⚠️ API Key is required for analysis.")
     st.markdown("---")
     st.markdown("### About")
-    st.markdown("This tool uses **Gemini 1.5 Flash** to analyze your code structure, explain logic, and suggest improvements.")
+    st.markdown("This tool uses **Gemini 2.5 Flash** to analyze your code structure, explain logic, and suggest improvements.")
 
 # Header
 st.markdown('<h1 class="main-header">⚡ Code Analyzer</h1>', unsafe_allow_html=True)
